@@ -1,4 +1,4 @@
-package com.aprendiendokotlin.cursomvvm.viewmodel
+package com.aprendiendokotlin.cursomvvm.ui.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

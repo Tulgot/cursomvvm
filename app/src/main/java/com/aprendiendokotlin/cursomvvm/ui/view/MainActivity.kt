@@ -1,11 +1,11 @@
-package com.aprendiendokotlin.cursomvvm.view
+package com.aprendiendokotlin.cursomvvm.ui.view
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.aprendiendokotlin.cursomvvm.databinding.ActivityMainBinding
-import com.aprendiendokotlin.cursomvvm.viewmodel.QuoteViewModel
+import com.aprendiendokotlin.cursomvvm.ui.viewmodel.QuoteViewModel
 
 class MainActivity : AppCompatActivity() {
 
