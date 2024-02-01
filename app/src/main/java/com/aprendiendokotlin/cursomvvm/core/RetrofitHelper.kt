@@ -8,7 +8,7 @@ object RetrofitHelper {
     fun getRetrofit(): Retrofit {
         return Retrofit
             .Builder()
-            .baseUrl("https://api.breakingbadquotes.xyz/v1")
+            .baseUrl("https://api.breakingbadquotes.xyz/")
             .addConverterFactory(
                 GsonConverterFactory.create()
             )
