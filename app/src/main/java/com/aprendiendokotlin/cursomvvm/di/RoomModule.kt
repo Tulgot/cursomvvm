@@ -3,6 +3,7 @@ package com.aprendiendokotlin.cursomvvm.di
 import android.content.Context
 import androidx.room.Room
 import com.aprendiendokotlin.cursomvvm.data.database.QuoteDatabase
+import com.aprendiendokotlin.cursomvvm.data.database.dao.QuoteDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,4 +20,8 @@ object RoomModule {
     @Provides
     fun provideRoom(@ApplicationContext context: Context) =
         Room.databaseBuilder(context, QuoteDatabase::class.java, QUOTE_DATABASE_NAME).build()
+
+    @Singleton
+    @Provides
+    fun provideQuoteDao(db:QuoteDatabase) = db.getQuoteDao()
 }

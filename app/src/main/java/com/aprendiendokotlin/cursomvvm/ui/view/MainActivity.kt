@@ -35,8 +35,9 @@ class MainActivity : AppCompatActivity() {
         quoteViewModel.onCreate()
 
         quoteViewModel.quoteModel.observe(this, Observer { currentQuote ->
-            binding.tvAuthor.text = currentQuote.author
-            binding.tvQuote.text = currentQuote.quote
+            binding.tvAuthor.text = currentQuote!!.author
+            binding.tvQuote.text = currentQuote!!.quote
+
             Log.i("ayush", currentQuote.toString())
         })
 
